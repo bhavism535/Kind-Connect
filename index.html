@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Kind Connect</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <nav>
+
+        <h2>Kind Connect</h2>
+
+        <ul>
+
+            <li>Home</li>
+            <li>NGOs</li>
+            <li>Donate</li>
+            <li>Contact</li>
+
+        </ul>
+
+    </nav>
+
+    <div class="hero-content">
+
+        <h1>
+        Connecting Donors
+        With NGOs
+        </h1>
+
+        <p>
+        Support meaningful causes
+        and help communities grow.
+        </p>
+
+        <button>
+        Explore NGOs
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FILTERS -->
+
+<section class="filters">
+
+    <button onclick="filterNGO('all')">
+    All
+    </button>
+
+    <button onclick="filterNGO('education')">
+    Education
+    </button>
+
+    <button onclick="filterNGO('food')">
+    Food
+    </button>
+
+    <button onclick="filterNGO('animals')">
+    Animals
+    </button>
+
+    <button onclick="filterNGO('health')">
+    Healthcare
+    </button>
+
+</section>
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+    <input type="text"
+    id="searchInput"
+    placeholder="Search NGOs..."
+    onkeyup="searchNGO()">
+
+</div>
+
+<!-- NGO CARDS -->
+
+<section class="ngo-container"
+id="ngoContainer">
+
+    <!-- CARD 1 -->
+
+    <div class="ngo-card"
+    data-category="education">
+
+        <img src="images/ngo1.jpg">
+
+        <h3>Hope Foundation</h3>
+
+        <p>
+        Supporting underprivileged
+        children with education.
+        </p>
+
+        <button onclick="openPopup()">
+        Donate Now
+        </button>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="ngo-card"
+    data-category="food">
+
+        <img src="images/ngo2.jpg">
+
+        <h3>Feed India</h3>
+
+        <p>
+        Helping families with
+        daily meals and nutrition.
+        </p>
+
+        <button onclick="openPopup()">
+        Donate Now
+        </button>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="ngo-card"
+    data-category="animals">
+
+        <img src="images/ngo3.jpg">
+
+        <h3>Paws Rescue</h3>
+
+        <p>
+        Animal rescue and shelter
+        support organization.
+        </p>
+
+        <button onclick="openPopup()">
+        Donate Now
+        </button>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="ngo-card"
+    data-category="health">
+
+        <img src="images/ngo4.jpg">
+
+        <h3>Health First</h3>
+
+        <p>
+        Providing medical support
+        in rural communities.
+        </p>
+
+        <button onclick="openPopup()">
+        Donate Now
+        </button>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="ngo-card"
+    data-category="education">
+
+        <img src="images/ngo5.jpg">
+
+        <h3>Bright Future</h3>
+
+        <p>
+        Scholarship and learning
+        programs for students.
+        </p>
+
+        <button onclick="openPopup()">
+        Donate Now
+        </button>
+
+    </div>
+
+    <!-- CARD 6 -->
+
+    <div class="ngo-card"
+    data-category="food">
+
+        <img src="images/ngo6.jpg">
+
+        <h3>Care Shelter</h3>
+
+        <p>
+        Food distribution drives
+        and shelter support.
+        </p>
+
+        <button onclick="openPopup()">
+        Donate Now
+        </button>
+
+    </div>
+
+</section>
+
+<!-- POPUP -->
+
+<div class="popup"
+id="popup">
+
+    <div class="popup-content">
+
+        <span onclick="closePopup()">
+        &times;
+        </span>
+
+        <h2>Donate</h2>
+
+        <input type="text"
+        placeholder="Your Name">
+
+        <input type="number"
+        placeholder="Donation Amount">
+
+        <textarea
+        placeholder="Message">
+        </textarea>
+
+        <button onclick="submitDonation()">
+        Submit
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Kind Connect</h3>
+
+    <p>
+    Connecting kindness with causes.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
